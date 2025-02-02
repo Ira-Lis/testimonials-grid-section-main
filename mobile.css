@@ -1,0 +1,33 @@
+@media (max-width: 1109px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  article {
+    width: 327px;
+  }
+  h2 {
+    margin-bottom: 16px;
+  }
+  .Daniel {
+    min-height: 444px;
+    background-position-x: 90%;
+  }
+  .Daniel h2 {
+    margin-bottom: 40px;
+  }
+  .Jonathan {
+    min-height: 240px;
+  }
+  .Jeanette {
+    min-height: 222px;
+  }
+  .Patrick {
+    min-height: 384px;
+  }
+  .Kira {
+    min-height: 438px;
+  }
+}
