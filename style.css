@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
-/* .barlow-semi-condensed-medium {
-    font-family: "Barlow Semi Condensed", serif;
-    font-weight: 500;
-    font-style: normal;
-  } */
+.barlow-semi-condensed-medium {
+  font-family: "Barlow Semi Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .barlow-semi-condensed-semibold {
   font-family: "Barlow Semi Condensed", serif;
@@ -13,26 +13,20 @@
   font-style: normal;
 }
 body {
-  /* width: 100vh; */
+  /* width: 100vw; */
   /* margin: 0 auto; */
-  background-color: #f2f2f2;
+  background-color: #ecf2f8;
 }
 p,
-h2,
-h3,
-hgroup {
+span,
+cite,
+blockquote {
   margin: 0;
 }
-hgroup {
+cite p {
+  /* height: 28px; */
   padding-inline-start: 46px;
   position: relative;
-}
-
-h3,
-p {
-  font-family: "Barlow Semi Condensed", serif;
-  font-weight: 500;
-  font-style: normal;
 }
 main {
   margin: 0 auto;
@@ -42,30 +36,31 @@ main {
   row-gap: 24px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding-block:164px ;
+  padding-block: 163px;
 }
 article {
   padding: 26px 32px;
   border-radius: 8px;
 }
-h3 {
+cite p {
   font-size: 13px;
   line-height: 13px;
-  margin-bottom: 4px;
 }
-hgroup p {
+cite span {
   font-size: 11px;
   line-height: 11px;
   margin-bottom: 18px;
   mix-blend-mode: normal;
   opacity: 0.5;
+  margin-top: 4px;
+  display: block;
 }
-h2 {
+blockquote div p {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 16px;
 }
-p {
+q {
   font-size: 13px;
   line-height: 18px;
   mix-blend-mode: normal;
@@ -83,7 +78,7 @@ p {
   background-position-x: 82%;
   position: relative;
 }
-.Daniel hgroup::before {
+.Daniel cite p::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -96,29 +91,24 @@ p {
   position: absolute;
   left: 0;
 }
-.Daniel h3 {
+.Daniel blockquote p {
   color: #ffffff;
 }
-.Daniel hgroup p {
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-.Daniel h2 {
+.Daniel cite span {
   color: #ffffff;
 }
-.DanielP{
-font-family: 'Barlow Semi Condensed';
-font-style: normal;
-font-weight: 500;
-color: #CFCFCF;
+.Daniel blockquote p {
+  color: #ffffff;
+}
+.Daniel blockquote q {
+  color: #cfcfcf;
 }
 .Jonathan {
   min-height: 282px;
   background-color: #48556a;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Jonathan hgroup::before {
+.Jonathan cite p::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -131,37 +121,18 @@ color: #CFCFCF;
   position: absolute;
   left: 0;
 }
-.Jonathan h3 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
+.Jonathan {
   color: #ffffff;
 }
-.Jonathan hgroup p {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #ffffff;
+.Jonathan cite p {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.Jonathan h2 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
-  color: #ffffff;
-}
-.JonathanP {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #ffffff;
 }
 .Jeanette {
   min-height: 266px;
   background: #ffffff;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Jeanette hgroup::before {
+.Jeanette cite p::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -174,28 +145,7 @@ color: #CFCFCF;
   position: absolute;
   left: 0;
 }
-.Jeanette h3 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #48556a;
-}
-.Jeanette hgroup p {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #48556a;
-}
-.Jeanette h2 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
-  color: #48556a;
-}
-.JeanetteP {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
+.Jeanette {
   color: #48556a;
 }
 .Patrick {
@@ -205,7 +155,7 @@ color: #CFCFCF;
   grid-column-end: 4;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Patrick hgroup::before {
+.Patrick cite p::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -218,31 +168,17 @@ color: #CFCFCF;
   position: absolute;
   left: 0;
 }
-.Patrick h3 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
+.Patrick cite p {
   color: #ffffff;
 }
-.Patrick hgroup p {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #ffffff;
-}
-.Patrick h2 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
+.Patrick div p {
   color: #ecf2f8;
 }
-.PatrickP {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
+.Patrick div q {
   color: #ffffff;
 }
 .Kira {
+  min-height: 572px;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -250,7 +186,7 @@ color: #CFCFCF;
   background: #ffffff;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Kira hgroup::before {
+.Kira cite p::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -263,27 +199,6 @@ color: #CFCFCF;
   position: absolute;
   left: 0;
 }
-.Kira h3 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #48556a;
-}
-.Kira hgroup p {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
-  color: #48556a;
-}
-.Kira h2 {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 600;
-  color: #48556a;
-}
-.KiraP {
-  font-family: "Barlow Semi Condensed";
-  font-style: normal;
-  font-weight: 500;
+.Kira {
   color: #48556a;
 }
