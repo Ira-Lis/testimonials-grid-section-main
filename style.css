@@ -38,7 +38,7 @@ main {
   row-gap: 24px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding-block: 162px;
+  padding-block: 163px;
 }
 article {
   padding: 26px 32px;
@@ -63,6 +63,7 @@ q {
   line-height: 18px;
   mix-blend-mode: normal;
   opacity: 0.7;
+  display: block;
 }
 .Daniel {
   min-height: 282px;
