@@ -56,7 +56,6 @@ cite span {
 blockquote div p {
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 16px;
 }
 q {
   font-size: 13px;
@@ -99,6 +98,9 @@ q {
 .Daniel blockquote q {
   color: #cfcfcf;
 }
+.Daniel div p {
+  margin-bottom: 16px;
+}
 .Jonathan {
   min-height: 282px;
   background-color: #48556a;
@@ -123,6 +125,9 @@ q {
 .Jonathan cite {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.Jonathan div p {
+  margin-bottom: 16px;
+}
 .Jeanette {
   min-height: 266px;
   background: #ffffff;
@@ -143,6 +148,9 @@ q {
 }
 .Jeanette {
   color: #48556a;
+}
+.Jeanette div p {
+  margin-bottom: 24px;
 }
 .Patrick {
   min-height: 266px;
@@ -169,6 +177,7 @@ q {
 }
 .Patrick div p {
   color: #ecf2f8;
+  margin-bottom: 24px;
 }
 .Patrick div q {
   color: #ffffff;
@@ -197,4 +206,7 @@ q {
 }
 .Kira {
   color: #48556a;
+}
+.Kira div p {
+  margin-bottom: 24px;
 }
