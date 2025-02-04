@@ -13,8 +13,9 @@
   font-style: normal;
 }
 body {
-  /* width: 100vw; */
-  /* margin: 0 auto; */
+  /* width: 100vh;
+  overflow: hidden; */
+  margin: 0 auto;
   background-color: #ecf2f8;
 }
 p,
@@ -23,10 +24,11 @@ cite,
 blockquote {
   margin: 0;
 }
-cite p {
-  /* height: 28px; */
+.Name {
   padding-inline-start: 46px;
   position: relative;
+  font-size: 13px;
+  line-height: 13px;
 }
 main {
   margin: 0 auto;
@@ -41,10 +43,6 @@ main {
 article {
   padding: 26px 32px;
   border-radius: 8px;
-}
-cite p {
-  font-size: 13px;
-  line-height: 13px;
 }
 cite span {
   font-size: 11px;
@@ -78,7 +76,7 @@ q {
   background-position-x: 82%;
   position: relative;
 }
-.Daniel cite p::before {
+.Daniel .Name::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -97,9 +95,6 @@ q {
 .Daniel cite span {
   color: #ffffff;
 }
-.Daniel blockquote p {
-  color: #ffffff;
-}
 .Daniel blockquote q {
   color: #cfcfcf;
 }
@@ -108,7 +103,7 @@ q {
   background-color: #48556a;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Jonathan cite p::before {
+.Jonathan .Name::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -124,7 +119,7 @@ q {
 .Jonathan {
   color: #ffffff;
 }
-.Jonathan cite p {
+.Jonathan cite {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .Jeanette {
@@ -132,7 +127,7 @@ q {
   background: #ffffff;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Jeanette cite p::before {
+.Jeanette .Name::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -155,7 +150,7 @@ q {
   grid-column-end: 4;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Patrick cite p::before {
+.Patrick .Name::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -168,7 +163,7 @@ q {
   position: absolute;
   left: 0;
 }
-.Patrick cite p {
+.Patrick cite {
   color: #ffffff;
 }
 .Patrick div p {
@@ -186,7 +181,7 @@ q {
   background: #ffffff;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
 }
-.Kira cite p::before {
+.Kira .Name::before {
   content: "";
   display: inline-block;
   width: 28px;
