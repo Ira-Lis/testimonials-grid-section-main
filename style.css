@@ -6,15 +6,12 @@
   font-weight: 500;
   font-style: normal;
 }
-
 .barlow-semi-condensed-semibold {
   font-family: "Barlow Semi Condensed", serif;
   font-weight: 600;
   font-style: normal;
 }
 body {
-  /* width: 100vh;
-  overflow: hidden; */
   margin: 0 auto;
   background-color: #ecf2f8;
 }
@@ -32,7 +29,7 @@ blockquote {
 }
 main {
   margin: 0 auto;
-  width: 1110px;
+  max-width: 1110px;
   display: grid;
   column-gap: 30px;
   row-gap: 24px;
@@ -138,7 +135,6 @@ q {
   display: inline-block;
   width: 28px;
   height: 28px;
-  /* border: 2px solid #a775f1; */
   border-radius: 50%;
   background-image: url(./images/image-jeanette.jpg);
   background-repeat: no-repeat;
